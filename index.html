@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        @import url(harrison_style.css);
+    </style>
+
+    <script src="harrison.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function()
+        {
+            $('#portraithover').hover(function() //img when mouse on image
+            {
+            $('#portraithover').attr('src','images/b&w/olivia01BW.jpg');
+        },
+        function()//img when mouse off photo
+        {
+            $('#portraithover').attr('src','images/portraits/olivia01.jpg');
+        })
+        })
+
+        $(function()
+        {
+            $('#couplehover').hover(function() //img when mouse on image
+            {
+            $('#couplehover').attr('src','images/b&w/couple01BW.jpg');
+        },
+        function()//img when mouse off photo
+        {
+            $('#couplehover').attr('src','images/couples/couple01.JPG');
+        })
+        })
+
+        $(function()
+        {
+            $('#creativehover').hover(function() //img when mouse on image
+            {
+            $('#creativehover').attr('src','images/b&w/lampshade04BW.jpg');
+        },
+        function()//img when mouse off photo
+        {
+            $('#creativehover').attr('src','images/creative/lampshade04.JPG');
+        })
+        })
+
+        $(function()
+        {
+            $('#bookhover').hover(function() //img when mouse on image
+            {
+            $('#bookhover').attr('src','images/b&w/book01BW.jpg');
+        },
+        function()//img when mouse off photo
+        {
+            $('#bookhover').attr('src','images/mockups/book01.jpg');
+        })
+        })
+
+        $(function()
+        {
+            $('#brochurehover').hover(function() //img when mouse on image
+            {
+            $('#brochurehover').attr('src','images/b&w/brochure03BW.jpg');
+        },
+        function()//img when mouse off photo
+        {
+            $('#brochurehover').attr('src','images/mockups/brochure03.jpg');
+        })
+        })
+
+        $(function()
+        {
+            $('#menuhover').hover(function() //img when mouse on image
+            {
+            $('#menuhover').attr('src','images/b&w/menu03BW.jpg');
+        },
+        function()//img when mouse off photo
+        {
+            $('#menuhover').attr('src','images/mockups/menu03.jpg');
+        })
+        })
+
+        
+    </script>
+
+</head>
+<body>
+    <header>
+            <nav id="nav">
+                <div class="navbar">
+                    <ul class="main_nav">
+                        <li><div class="logo">OLIVIA HARRISON</div></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="photos.html">Photos</a></li>
+                        <li><a href="design.html">Design</a></li>
+                        <li><a href="gear.html">Gear</a></li>
+                        <li><a href="bio.html">Bio</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="toggle" onclick="myFunction()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="hero_image"></div>
+    </header>
+
+    <main>
+
+        <div class="indexcontainer">
+
+            <div class="welcome">
+                <h1>The portfolio of Olivia Harrison</h1>
+                <p>Welcome to the website of Olivia Harrison. I am a graphic designer and photographer located in Lakeland, FL. Visit my <a href="bio.html">bio</a> page to learn more about me and get in contact or to collaborate! In the meantime, enjoy exploring some of previous works. </p>
+            </div>
+
+            <div class="name1"><h1>Photography Work</h1>
+            <p>Photography is a form of artistic expression that enables photographers to convey their perspective, emotions, and ideas through images. It's a means to communicate and connect with viewers on a deep level.</p>
+            </div>
+
+            <div class="portraits"><a href="photos.html"><img src="images/portraits/olivia01.jpg" id="portraithover" alt="olivia outside"></a></div>
+
+            <div class="couples"><a href="photos.html"><img src="images/couples/couple01.JPG" id="couplehover" alt="couple standing in grass"></a></div>
+
+            <div class="creative"><a href="photos.html"><img src="images/creative/lampshade04.JPG" id="creativehover" alt="person with lampshade on head"></a></div>
+
+
+            <div class="name2"><h1>Graphic Design Work</h1>
+            <p>Graphic design is a dynamic and influential field that encompasses the art of visual communication. It involves creating and combining various elements to convey messages, ideas, and information in a visually compelling and effective way. </p>
+            </div>
+            
+            <div class="book"><a href="design.html"><img src="images/mockups/book01.jpg" id="bookhover" alt="stack of books"></a></div>
+            <div class="brochure"><a href="design.html"><img src="images/mockups/brochure03.jpg" id="brochurehover" alt="open brochure"></a></div>
+            <div class="menu"><a href="design.html"><img src="images/mockups/menu03.jpg" id="menuhover" alt="open diner menu"></a></div>
+
+
+            <div class="contact">
+                <h1>Contact Me</h1>
+                <p>To stay in contact or send inquiries, please feel free to contact me via email or phone, or visit one of my social media pages.</p>
+
+        
+                    <p>(863) 555 - 5555</p>
+                    <p><a href="mailto:oliviah1001@gmail.com">oliviah1001@gmail.com</a></p>
+                    <p><a href="https://www.instagram.com/theoliviaharrison" target="_blank">Instagram</a></p>
+                    <p><a href="https://www.facebook.com/oliviaharrison" target="_blank">Facebook</a></p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p><small>Online Portfolio &copy; 2023 by Olivia Harrison</small></p>
+    </footer>
+
+</body>
+</html>

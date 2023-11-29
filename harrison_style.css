@@ -1,0 +1,864 @@
+@charset "UTF-8";
+
+
+/*-----------hero image------------*/
+html {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+.hero_image {
+    background-image: url(images/portraits/parking_garage01.jpeg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 75px;
+}
+.hero_image02 {
+    background-image: url(images/misc/photo_screen.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 75px;
+    max-width: 100%;
+}
+.hero_image04 {
+    background-image: url(images/misc/gear_screen.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 75px;
+}
+.hero_image05 {
+    background-image: url(images/misc/bio_screen.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 75px;
+}
+
+/*------------body/main--------------*/
+
+body {
+    margin: 0;
+    background-color: rgb(218, 206, 192);
+    text-align: center;
+}
+h1 {
+    font-family: Bebas Neue;
+    color: rgb(89, 89, 89);
+}
+h2 {
+    font-family: Bebas Neue;
+    color: rgb(89, 89, 89);
+}
+h3 {
+    font-family: Bebas Neue;
+    color: rgb(89, 89, 89);
+}
+p {
+    font-family: Montserrat;
+    color:rgb(89, 89, 89);
+    margin: 20px;
+}
+
+/*-------------images-----------------*/
+
+img {
+    max-width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+video {
+    max-width: 100%;
+}
+
+/*-----------nav style---------------*/
+.navbar {
+    max-width: 800px;
+    margin-left: 0px;
+}
+.main_nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: rgb(166, 152, 133);
+    font-size: 15pt;
+    padding: .5em;
+    overflow: hidden;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+.main_nav a{
+    color: rgb(241, 243, 244);
+    padding: 60px 40px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+.main_nav a:hover {
+    background-color: white;
+    color: rgb(166, 152, 133);
+}
+.logo {
+    color: rgb(241, 243, 244);
+    font-size: 50px;
+    cursor: default;
+}
+li.logo {
+
+    margin: 0;
+    font-family: Bebas Neue;
+    box-shadow: none;
+} 
+li {
+    margin-right: auto;
+    font-family: Bebas Neue;
+}
+
+
+
+/*--------------------grid index page------------------------*/
+
+
+.indexcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 35px;
+    margin: 30px;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 
+    'welcome    welcome    welcome'
+    'name1      name1      name1'
+    'portraits  couples    creative'
+    'name2      name2      name2'
+    'book       brochure   menu'
+    'contact    contact    contact'
+    ;
+}
+
+.welcome {
+    grid-area: welcome;
+    object-fit: cover;
+}
+.portraits {
+    grid-area: portraits;
+    object-fit: cover;
+    max-width: 100%;
+}
+.couples {
+    grid-area: couples;
+    object-fit: cover;
+    max-width: 100%;
+}
+.creative {
+    grid-area: creative;
+    object-fit: cover;
+    max-width: 100%;
+}
+.book {
+    grid-area: book;
+    object-fit: cover;
+}
+.brochure {
+    grid-area: brochure;
+    object-fit: cover;
+}
+.menu {
+    grid-area: menu;
+    object-fit: cover;
+}
+.contact {
+    grid-area: contact;
+    object-fit: cover;
+}
+.name1 {
+    grid-area: name1;
+    object-fit: cover;
+}
+.name2 {
+    grid-area: name2;
+    object-fit: cover;
+}
+
+/*--------------------grid - photos page-----------------------*/
+.photocontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    margin: 30px;
+    grid-template-rows: repeat(16, auto);
+    grid-template-areas: 
+    'cap1   cap1    cap1'
+    'port1  port2   port3'
+    'port4  port5   port6'
+    'port7  port8   port9'
+    'port10 port11 port12'
+    'cap2   cap2    cap2'
+    'coup1  coup2   coup3'
+    'coup4  coup5   coup6'
+    'cap3   cap3    cap3'
+    'cre1   cre2    cre3'
+    'cre4   cre5    cre6'
+    'cre7   cre8    cre9'
+    'cre10  cre11   cre12'
+    'cap4   cap4    cap4'
+    'vid1   vid1    vid1'
+    'vid2   vid2    vid2'
+    ;
+}
+.caption1 {
+    grid-area: cap1;
+    object-fit: cover;
+}
+.port1 {
+    grid-area: port1;
+    object-fit: cover;
+}
+.port2 {
+    grid-area: port2;
+    object-fit: cover;
+}
+.port3 {
+    grid-area: port3;
+    object-fit: cover;
+}
+.port4 {
+    grid-area: port4;
+    object-fit: cover;
+}
+.port5 {
+    grid-area: port5;
+    object-fit: cover;
+}
+.port6 {
+    grid-area: port6;
+    object-fit: cover;
+}
+.port7 {
+    grid-area: port7;
+    object-fit: cover;
+}
+.port8 {
+    grid-area: port8;
+    object-fit: cover;
+}
+.port9 {
+    grid-area: port9;
+    object-fit: cover;
+}
+.port10 {
+    grid-area: port10;
+    object-fit: cover;
+}
+.port11 {
+    grid-area: port11;
+    object-fit: cover;
+}
+.port12 {
+    grid-area: port12;
+    object-fit: cover;
+}
+.caption2 {
+    grid-area: cap2;
+    object-fit: cover;
+}
+.coup1 {
+    grid-area: coup1;
+    object-fit: cover;
+}
+.coup2 {
+    grid-area: coup2;
+    object-fit: cover;
+}
+.coup3 {
+    grid-area: coup3;
+    object-fit: cover;
+}
+.coup4 {
+    grid-area: coup4;
+    object-fit: cover;
+}
+.coup5 {
+    grid-area: coup5;
+    object-fit: cover;
+}
+.coup6 {
+    grid-area: coup6;
+    object-fit: cover;
+}
+.caption3 {
+    grid-area: cap3;
+    object-fit: cover;
+}
+.cre1 {
+    grid-area: cre1;
+    object-fit: cover;
+}
+.cre2 {
+    grid-area: cre2;
+    object-fit: cover;
+}
+.cre3 {
+    grid-area: cre3;
+    object-fit: cover;
+}
+.cre4 {
+    grid-area: cre4;
+    object-fit: cover;
+}
+.cre5 {
+    grid-area: cre5;
+    object-fit: cover;
+}
+.cre6 {
+    grid-area: cre6;
+    object-fit: cover;
+}
+.cre7 {
+    grid-area: cre7;
+    object-fit: cover;
+}
+.cre8 {
+    grid-area: cre8;
+    object-fit: cover;
+}
+.cre9 {
+    grid-area: cre9;
+    object-fit: cover;
+}
+.cre10 {
+    grid-area: cre10;
+    object-fit: cover;
+}
+.cre11 {
+    grid-area: cre11;
+    object-fit: cover;
+}
+.cre12 {
+    grid-area: cre12;
+    object-fit: cover;
+}
+.caption4 {
+    grid-area: cap4;
+    object-fit: cover;
+}
+.video1 {
+    grid-area: vid1;
+    object-fit: cover;
+}
+.video2 {
+    grid-area: vid2;
+    object-fit: cover;
+}
+
+
+/*--------------grid - design page----------------*/
+
+.designcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 35px;
+    margin: 30px;
+    margin-top: 150px;
+    grid-template-rows: repeat(14, auto);
+    grid-template-areas: 
+    'h1     h1      h1'
+    'book1  book2   book3'
+    'br1    br2     br3'
+    'menu1  menu2   menu3'
+    'h2     h2      h2'
+    'cozy1  cozy1   cozy1'
+    'cozy2  cozy2   cozy2'
+    'shutter1   shutter1   shutter1'
+    'shutter2   shutter2   shutter2'
+    'h3     h3      h3'
+    'comp1  comp1   comp1'
+    'comp2  comp2   comp2'
+    'post1   post1  post1'
+    'post2   post2  post2'
+    ;
+}
+.heading1 {
+    grid-area: h1;
+    object-fit: cover;
+}
+.heading2 {
+    grid-area: h2;
+    object-fit: cover;
+}
+.heading3 {
+    grid-area: h3;
+    object-fit: cover;
+}
+.book1 {
+    grid-area: book1;
+    object-fit: cover;
+}
+.book2 {
+    grid-area: book2;
+    object-fit: cover;
+}
+.book3 {
+    grid-area: book3;
+    object-fit: cover;
+}
+.brochure1 {
+    grid-area: br1;
+    object-fit: cover;
+}
+.brochure2 {
+    grid-area: br2;
+    object-fit: cover;
+}
+.brochure3 {
+    grid-area: br3;
+    object-fit: cover;
+}
+.menu1 {
+    grid-area: menu1;
+    object-fit: cover;
+}
+.menu2 {
+    grid-area: menu2;
+    object-fit: cover;
+}
+.menu3 {
+    grid-area: menu3;
+    object-fit: cover;
+}
+.cozy1 {
+    grid-area: cozy1;
+    object-fit: cover;
+}
+.cozy2 {
+    grid-area: cozy2;
+    object-fit: cover;
+}
+.shutter1 {
+    grid-area: shutter1;
+    object-fit: cover;
+}
+.shutter2 {
+    grid-area: shutter2;
+    object-fit: cover;
+}
+.composite1 {
+    grid-area: comp1;
+    object-fit: cover;
+}
+.composite2 {
+    grid-area: comp2;
+    object-fit: cover;
+}
+.postcard1 {
+    grid-area: post1;
+    object-fit: cover;
+}
+.postcard2 {
+    grid-area: post2;
+    object-fit: cover;
+}
+
+
+/*---------------------grid gear page-------------------------*/
+
+.gearcontainer {
+    margin-top: 105px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(7, auto);
+    margin-top: 105px;
+    grid-gap: 35px;
+    margin: 30px;
+    grid-template-areas: 
+    'opener     opener      opener'
+    'cam1       cam2        cam3'
+    'camgear    camgear     camgear'
+    'acc1       acc2        acc3'
+    'accessories accessories accessories'
+    'work1      work2       work3'
+    'workspace  workspace   workspace'
+    ;
+}
+.opener {
+    grid-area: opener;
+    object-fit: cover;
+}
+.cam1 {
+    grid-area: cam1;
+    object-fit: cover;
+}
+.cam2 {
+    grid-area: cam2;
+    object-fit: cover;
+}
+.cam3 {
+    grid-area: cam3;
+    object-fit: cover;
+}
+.camgear {
+    grid-area: camgear;
+    object-fit: cover;
+}
+.acc1 {
+    grid-area: acc1;
+    object-fit: cover;
+}
+.acc2 {
+    grid-area: acc2;
+    object-fit: cover;
+}
+.acc3 {
+    grid-area: acc3;
+    object-fit: cover;
+}
+.accessories {
+    grid-area: accessories;
+    object-fit: cover;
+}
+.work1 {
+    grid-area: work1;
+    object-fit: cover;
+}
+.work2 {
+    grid-area: work2;
+    object-fit: cover;
+}
+.work3 {
+    grid-area: work3;
+    object-fit: cover;
+}
+.workspace {
+    grid-area: workspace;
+    object-fit: cover;
+}
+
+
+
+/*----------------------grid bio page-------------------------*/
+
+
+.biocontainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 35px;
+    margin: 30px;
+    grid-template-areas: 
+    'intro  intro   intro'
+    'bio1   bio2    bio3'
+    'contactme   contactme   contactme'
+    ;
+}
+.intro {
+    grid-area: intro;
+    object-fit: cover;
+}
+.bio1 {
+    grid-area: bio1;
+    object-fit: cover;
+}
+.bio2 {
+    grid-area: bio2;
+    object-fit: cover;
+}
+.bio3 {
+    grid-area: bio3;
+    object-fit: cover;
+}
+.contactme {
+    grid-area: contactme;
+    object-fit: cover;
+}
+
+
+/*--------------------responsive design-----------------------*/
+
+@media screen and (max-width: 849px){
+    .logo {
+        display: none;
+    }
+    .main_nav {
+        height: 100px;
+    }
+}
+@media screen and (max-width: 600px){
+      .logo {
+          display: none;
+      }
+      .main_nav {
+          height: 100px;
+          flex-wrap: wrap;
+          font-size: 7pt;
+      }
+  }
+
+
+
+
+/*---index page---*/
+@media screen and (max-width: 800px) {
+    .indexcontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas: 
+        'welcome    welcome'
+        'name1      name1'
+        'portraits  portraits'
+        'couples    creative'
+        'name2      name2'
+        'book       book'
+        'brochure   menu'
+        'contact    contact'
+        ;
+    }
+}
+@media screen and (max-width: 600px) {
+    .indexcontainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, auto);
+        grid-template-areas: 
+        'welcome'
+        'name1'
+        'portraits'
+        'couples'
+        'creative'
+        'name2'
+        'book'
+        'brochure'
+        'menu'
+        'contact'
+        ;
+    }
+}
+
+
+/*---photos page---*/
+@media screen and (max-width: 800px) {
+    .photocontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(26, auto);
+        grid-template-areas: 
+        'cap1   cap1'
+        'port1  port2'
+        'port3  port3'
+        'port4  port5'
+        'port6  port7'
+        'port8  port8'
+        'port9  port10'
+        'port9  port11'
+        'port12  port12'
+        'cap2   cap2'
+        'coup1  coup2'
+        'coup3  coup4'
+        'coup3  coup5'
+        'coup6  coup6'
+        'cap3   cap3'
+        'cre1   cre1'
+        'cre2   cre3'
+        'cre4   cre4'
+        'cre5   cre6'
+        'cre7   cre7'
+        'cre8   cre9'
+        'cre10   cre10'
+        'cre11   cre12'
+        'cap4   cap4'
+        'vid1   vid1'
+        'vid2   vid2'
+        ;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .photocontainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(36, auto);
+        grid-template-areas: 
+        'cap1'
+        'port1'
+        'port2'
+        'port3'
+        'port4'
+        'port5'
+        'port6'
+        'port7'
+        'port8'
+        'port9'
+        'port10'
+        'port11'
+        'port12'
+        'cap2'
+        'coup1'
+        'coup2'
+        'coup3'
+        'coup4'
+        'coup5'
+        'coup6'
+        'cap3'
+        'cre1'
+        'cre2'
+        'cre3'
+        'cre4'
+        'cre5'
+        'cre6'
+        'cre7'
+        'cre8'
+        'cre9'
+        'cre10'
+        'cre11'
+        'cre12'
+        'cap4'
+        'vid1'
+        'vid2'
+        ;
+    }
+}
+
+
+
+/*--design page---*/
+@media screen and (max-width: 800px) {
+    .designcontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(13, auto);
+        grid-template-areas: 
+        'h1     h1'
+        'book1  book1'
+        'book2  book3'
+        'br1    br1'
+        'br2    br3'
+        'menu1  menu1'
+        'menu2  menu3'
+        'h2     h2'
+        'cozy1  cozy2'
+        'shutter1 shutter2'
+        'h3     h3'
+        'comp1  comp2'
+        'post1  post2'
+        ;
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .designcontainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(20, auto);
+        grid-template-areas: 
+        'h1'
+        'book1'
+        'book2'
+        'book3'
+        'br1'
+        'br2'
+        'br3'
+        'menu1'
+        'menu2'
+        'menu3'
+        'h2'
+        'cozy1'
+        'cozy2'
+        'shutter1'
+        'shutter2'
+        'h3'
+        'comp1'
+        'comp2'
+        'post1'
+        'post2'
+        ;
+        justify-items: center;
+        margin: 15px;
+        max-width: 1200px;
+        margin-top: 250px;
+    }
+}
+
+/*---gear page---*/
+@media screen and (max-width: 800px) {
+    .gearcontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(10, auto);
+        grid-template-areas: 
+        'opener         opener'
+        'cam1           cam2'
+        'cam3           cam3'
+        'camgear        camgear'
+        'acc1           acc2'
+        'acc3           acc3'
+        'accessories    accessories'
+        'work1          work2'
+        'work3          work3'
+        'workspace      workspace'
+        ;
+    }
+}
+@media screen and (max-width: 600px) {
+    .gearcontainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(13, auto);
+        grid-template-areas: 
+        'opener'
+        'cam1'
+        'cam2'
+        'cam3'
+        'camgear'
+        'acc1'
+        'acc2'
+        'acc3'
+        'accessories'
+        'work1'
+        'work2'
+        'work3'
+        'workspace'
+        ;
+    }
+}
+
+
+/*---bio page---*/
+@media screen and (max-width: 800px) {
+    .biocontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+        'intro  intro'
+        'bio1   bio1'
+        'bio2   bio3'
+        'contactme   contactme'
+        ;
+    }
+}
+@media screen and (max-width: 600px) {
+    .biocontainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: 
+        'intro'
+        'bio1'
+        'bio2'
+        'bio3'
+        'contactme'
+        ;
+    }
+}
